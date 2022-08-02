@@ -1,19 +1,19 @@
 # wsWonder
-> wsWonder is a Open Source page for make easy Web Scraping
-](https://platzi.com/clases/fastapi-modularizacion-datos/)" of "[Platzi](https://platzi.com)"
+> [wsWonder is a Open Source page for make easy Web Scraping
+](https://github.com/Zurybr/wsWonder) made by  "[Zurybr](https://zurybr.github.io/main/)"
 
 ## Table of Contents:
 - [Description](#description)
-  - [Features](#features)
+- [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-  - [Using docker](#with-docker)
-  - [Normal](#without-docker)
+- [Using docker](#with-docker)
+- [Normal](#without-docker)
 - [Usage](#run-it-locally)
 
 
 ## Description
-This is project is a simple REST API made with FastAPI for learning purposes.
+this app is made with Django, django-rest-framework, React.Js and it uses JWT for Authentication. 
 
 ### Features
 Features included:
@@ -28,19 +28,24 @@ Features included:
 - MyPY
 
 ## Requirements:
-- Python >= 3.6
+- Python >= 3.9
 - Docker and Docker Compose (Optionally)
 
 ## Installation
 1. Clone or download de repository:
     ```
-    $ git clone https://github.com/JoseNoriegaa/platzi-twitter-api-fastapi
+    $ git clone https://github.com/Zurybr/wsWonder.git
     ```
 
 2. Open the console inside the project directory and create a virtual environment (You can skip this step if you have docker installed).
     ```bash
     $ python3 -m venv venv
     $ source venv/bin/activate
+    ```
+    for windows 
+    ```cmd
+    $ py -m venv venv
+    $ .\venv\Scripts\activate
     ```
 
 3. Install the app (You can skip this step if you have docker installed)
@@ -50,9 +55,6 @@ Features included:
 
 ## Run it locally
 Copy the `env.example` file into the same directory with the name `.env`
-```bash
-$ cp ./env.example ./.env
-```
 
 
 ### With docker
@@ -76,8 +78,8 @@ DATABASE_URL=mysql+pymysql://${YOUR_USER}:${YOUR_PASSWORD}@${HOST}:${PORT}/${DAT
 
 2. Run the server.
 ```bash
-$ python3 main.py
+$ python3 manage.py runserver
 ```
 
 ## Basic Usage
-Once you are running the server open the [Swagger UI App](http://localhost:8000/docs) to checkout the API documentation.
+Once you are running the server open the [The Browsable API](http://localhost:8000/) and go to the path to checkout the API documentation.
